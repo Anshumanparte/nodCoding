@@ -18,7 +18,8 @@ navbar();
 
 
 
-
+function codinganimation(){
+    
 var cflower = document.querySelectorAll(".flower")
 var stem = document.querySelectorAll(".js-stem-path")
 
@@ -33,6 +34,7 @@ cflower.forEach((elem,index)=>{
     movespeed =dets.movementX*10;
     
     movespeed = Math.max(-50, Math.min(50, movespeed));
+    
     
     // cflower.style.transform = `translateX(${dets.movementX}%)`
         
@@ -107,6 +109,26 @@ setInterval(()=>{
 
 
     
+}
+
+codinganimation();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
