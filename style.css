@@ -23,7 +23,7 @@ width: 100%;
 }
 
 nav{
-    background-color: #fdfaf5;
+    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,6 +34,7 @@ nav{
     top: 2%;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 9999;
 }
 nav .part2{
     display: flex;
@@ -60,9 +61,9 @@ nav button{
 #page1{
     height: 100vh;
     width: 100%;
-    background-color: #fdfaf5;
-    padding: 2% 10%;
-    padding-top: 10%;
+    /* background-color: #fdfaf5; */
+    /* padding: 2% 10%; */
+    /* padding-top: 10%; */
 
 }
 #page2{
@@ -75,12 +76,26 @@ nav button{
     width: 100%;
     background-color: #333;
 }
-
-#coding{
+#hiddencoding{
     height: 70%;
-    width: 90%;
+    /* background-color: #111; */
+    width: 100%;
+    overflow-y: hidden;
     margin: auto;
-    background-color: royalblue;
+    background-color: #fdfaf5;
+}
+#coding{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    /* background-color: #1d4472; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+   position: relative;
+    
 }
 #page1Bottom{
     display: flex;
@@ -88,15 +103,18 @@ nav button{
     height: 20%;
     margin-top: 3vw;
     justify-content: space-between;
+    padding: 0% 5%;
     
 }
 #page1Bottom div{
-    width: 50%;
+    width: 40%;
 }
 #page1Bottom h1{
-    font-size: 8vw;
+    width: 60%;
+    font-size: 10vw;
     color: #333;
     font-family: wowb;
+    font-weight: 400;
 }
 #page1Bottom div h3{
     font-size: 2vw;
@@ -109,3 +127,46 @@ nav button{
     font-family: wow;
     line-height: 1.5em;
 }
+
+.letters{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+
+.flower{
+      transform-origin:50% 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+}
+.stem{
+    
+}   
+.stem svg{
+   margin-top: -10%;
+    position: relative; 
+}
+.js-stem-path{
+    stroke-width: .1667rem;
+    stroke: #111;
+    fill: none;
+
+    
+}
+#lettern .flower{
+    margin-left: 30%;
+}
+#lettern .stem svg{
+    margin-top: -50%;
+    position: relative;
+}
+.letter1{left: 0%;}
+.letter2{left: 18%;}
+.letter3{left: 35%;}
+.letter4{left: 50%;}
+.letter5{left: 58%;}
+.letter6{left: 78%;}
