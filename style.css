@@ -197,17 +197,7 @@ nav button{
     background-color: #3C61E5;
     height: 6vw;
 }
-#page2-part1 .part1-top .eye{
-    background-color: #3658D3;
-    position: absolute;
-    height: 25vw;
-    width: 25vw;
-    
-    border-radius: 50%;
-    left: 50%;
-    transform: translate(-50%,0);
-    bottom: -14vw;
-}
+
 
 #page2-part1 .video-div{
     background-color: #FFD37D;
@@ -215,19 +205,50 @@ nav button{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5vw;
+    padding: 4vw;
     position: relative;
 
 }
-
-#page2-part1 .video-div video{
+.play{
+    background-color: #3C61E5;
+    height: 6vw;
+    width: 6vw;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+}
+.play img{
+    position: absolute;
+}
+#page2-part1 .video-div #video{
+    width: 100%;
+    height: 100%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    
+}
+#page2-part1 .video-div #video video{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all ease-in-out 1s;
 
 }
-
-
+#page2-part1 .video-div #video #video-inner{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: all ease-in-out 1s;
+}
+#page2-part1 .video-div #video:hover #video-inner{
+    transform: scale(.95);
+    
+}
+#page2-part1 .video-div #video:hover #video-inner video{
+    transform: scale(1.1);
+}
 
 
 
@@ -271,4 +292,48 @@ nav button{
     width: 100%;
     background-color: #333;
 }
+#page2-part1 .part1-top .eye{
+    background-color: #3658D3;
+    position: absolute;
+    height: 25vw;
+    width: 25vw;
+    
+    
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+    bottom: -14vw;
+}
+.eyeball{
+    background-color: #fff;
+    height: 30%;
+    width: 65%;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%,0);
+    clip-path: path('M 0 61 Q 137 -61 274 61 Q 137 183 0 61 Z');
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+.pupils{
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    align-items: center;
+    gap: 5em;
+    /* background-color: #111; */
+}
+.pupil{
+    height: 7vw;
+    width: 7vw;
+    
+    border-radius: 50%;
+}
+#pupil1{background-color: #FFD37D;}
+#pupil2{background-color: #FF8787;}
+
+
 
